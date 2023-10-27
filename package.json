@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "nodemon",
-    "start": "tsx src/index.ts"
+    "start": "ts-node src/index.ts",
+    "build": "tsc"
   },
   "nodemonConfig": {
     "ignore": [
@@ -27,6 +28,8 @@
     "@types/node": "^20.8.9",
     "nodemon": "^3.0.1",
     "prisma": "latest",
-    "tsx": "^3.12.2"
+    "ts-node": "^10.9.1",
+    "tsx": "^3.12.2",
+    "typescript": "^5.2.2"
   }
 }

@@ -70,7 +70,7 @@ app.get("/", async (c) => {
     throw new Error("Requested page is out of range");
   }
 
-  const mapFiles = files.map((file) => ({
+  const mapFiles = files.map((file: any) => ({
     ...file,
     raw_url: `/file/${file.id}`,
     detail_url: `/file/${file.id}/detail`,
