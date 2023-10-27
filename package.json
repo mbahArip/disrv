@@ -1,0 +1,32 @@
+{
+  "scripts": {
+    "dev": "nodemon",
+    "start": "tsx src/index.ts"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "src/**/*.test.ts",
+      "src/**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "tsx src/index.ts",
+    "ext": "ts,json"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.2.0",
+    "@prisma/client": "latest",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "hono": "^3.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "nodemon": "^3.0.1",
+    "prisma": "latest",
+    "tsx": "^3.12.2"
+  }
+}
